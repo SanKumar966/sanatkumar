@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+    <header class="nav">
+        <li><a href="#nm" id="hm">Home</a></li>
+        <li><a href="#am" id="ab">About</a></li>
+        <li><a href="#ed" id="edu">Education</a></li>
+        <li><a href="#sk" id="skil">Skills</a></li>
+        <li><a href="#cn" id="cnt">Contact</a></li>
+    </header>
+<div class="bod">
+
+    <div id="nm">
+      <p>Hi, I'm <big id="name">Sanat</big></p>
+      <div class="lineS"></div>
+    </div>
+
+    <div class="am" id="am">
+      <p style="color: black;">About me</p>
+      <div class="line"></div>
+      <div class="aboutme">
+      <p class="about">
+          Hello there! My name is Sanat Kumar Sethi, 
+          an undergraduate student pursuing Bachelors of Technology 
+          in Computer Science & Engineering discipline. I am passionate
+          about designing, and front-end developement, and looking for 
+          any opportunity as an front-end developer intern.
+      </p>
+    </div>
+    </div>
+
+    <div id="ed" style="border-top-right-radius: 20px; border-bottom-left-radius: 20px;">
+        <p style="color: white; font-size: 70px;">Education</p>
+        <div class="line1"></div>
+        <div class="circle">
+            <p>
+                <div class="content">
+                   <big style="font-size: 30px;">2018 - 2020</big> 
+                <br>
+                <big style="font-size: 19px;">Completed my higher-secondary education in science discipline from <b style="text-shadow: 0 0 3px rgb(0, 255, 136);">Rama Chandra Mardharaja Science College in Khallikote, Ganjam, Odisha.</b></big>
+                </div>
+            </p>
+        </div>
+        <br>
+        <div class="circle"><p>
+            <div class="content">
+               <big style="font-size: 30px;">2020 - Now</big> 
+            <br>
+           <big style="font-size: 18px;">Currently pursuing Bachelor of Technology in CSE discipline from <b style="text-shadow: 0 0 3px rgb(0, 255, 136);">Gandhi Academy of Technology & Engineering in Golanthara, Ganjam, Odisha. </b></big>
+            </div>
+        </p></div>
+    </div>
+
+    <div id="sk"
+    style="background-color: white;">
+        <p style="color: black; font-size: 70px;">Skills</p>
+        <div class="line"></div>
+        
+        <div id="progBar1"></div>
+        <br>
+        <div id="progBar2"></div>
+        <br>
+        <div id="progBar3"></div>
+    </div>
+
+    <div id="cn" style="border-top-right-radius: 20px;">
+        <p style="color: white; font-size: 70px;">Contact me</p>
+        <div class="line1"></div>
+        <br>
+        <div id="form">
+        <form action="#">
+            <label for="Name" style="color: white;">Name</label>
+            <input type="text" name="Name">
+            <br><br>
+            <label for="Email" style="color: white;">Email</label>
+            <input type="email" name="Email">
+            <input type="submit">
+        </form>
+       </div>
+    </div>
+
+</div>
+<script>
+       var target=document.querySelector("#am");
+       var target1=document.querySelector("#ed");
+       var target2=document.querySelector("#sk");
+       var target3=document.querySelector("#cn");
+       var target4=document.querySelector("#hm");
+       var b=document.getElementById("ab");
+       var b1=document.getElementById("edu");
+       var b2=document.getElementById("skil");
+       var b3=document.getElementById("cnt");
+       var b4=document.getElementById("hm");
+       b4.style.width="250px";
+       document.addEventListener('scroll',()=>{
+        if(window.scrollY>=target4.getBoundingClientRect().top)
+        {
+            b4.style.width="150px";
+        }
+        else
+        {
+            b4.style.width="250px";
+
+        }
+           
+           if(window.scrollY-100>=target.getBoundingClientRect().top){
+           b.style.background="white";
+           b.style.color="black";
+           b.style.width="250px";
+           //alert(window.scrollY-200);
+        }
+           else{
+            b.style.color="rgb(0, 255, 136)";
+            b.style.background="black";
+            b.style.width="150px";
+
+           }
+      // })
+        
+           if((window.scrollY-900)>=target1.getBoundingClientRect().top){
+           b.style.background="black";
+           b.style.width="150px";
+           b.style.color="rgb(0, 255, 136)";
+
+           b1.style.width="250px";
+           b1.style.color="black";
+
+           b1.style.background="white";
+        }
+           else{
+            b1.style.color="rgb(0, 255, 136)";
+            b1.style.width="150px";
+            b1.style.background="black";
+           }
+           if(window.scrollY-1600>=target2.getBoundingClientRect().top){
+           b1.style.background="black";
+           b1.style.color="rgb(0, 255, 136)";
+           b1.style.width="150px";
+
+           b2.style.width="250px";
+           b2.style.color="black";
+           
+           b2.style.background="white";
+           //b3.style.background="black";
+           //b4.style.background="black";
+           //b1.style.background="black";
+           //b.style.background="black";
+
+           
+        }
+           else{
+            b2.style.color="rgb(0, 255, 136)";
+            b2.style.width="150px";
+            b2.style.background="black";
+           }
+
+           if(window.scrollY-2100>=target3.getBoundingClientRect().top){
+            b2.style.background="black";
+            b2.style.width="150px";
+            b2.style.color="rgb(0, 255, 136)";
+
+            b3.style.width="250px";
+            b3.style.color="black";
+
+
+            b3.style.background="white";
+            //alert(window.scrollY);
+           
+        }
+           else{
+            b3.style.color="rgb(0, 255, 136)";
+            b3.style.width="150px";
+            b3.style.background="black";
+           }
+       }
+       )
+</script>
+</body>
+</html>

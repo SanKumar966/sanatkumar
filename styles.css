@@ -1,0 +1,297 @@
+@font-face
+{
+    font-family: myFont;
+    src: url(angelina.TTF);
+}
+
+@font-face
+{
+    font-family: myFont1;
+    src: url(Font.ttf);
+}
+:root{
+    --aqua:  rgb(0, 255, 136);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+#name
+{
+    font-family: myFont;
+    color: rgb(0, 255, 136);
+    transition: color 2s ease-in-out;
+}
+#nm{
+    font-size: 90px;
+    color: white;
+    transition: color 1.7s ease-out;
+    padding-top: 5em;
+    padding-left: 40px;
+}
+div.am{
+    height: 695px;
+    font-size: 90px;
+    background-color: white;
+    color: black;
+    padding-left: 0;
+}
+.bod{
+    float: right;
+    width: 75%;
+}
+div{
+    background-color:rgb(0, 0, 0);
+    height: 695px;
+}
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 25%;
+    background: rgb(43, 35, 35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    
+}
+::selection{
+    background: var(--aqua);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1.4em;
+}
+html::-webkit-scrollbar-track{
+    background: rgb(48, 47, 47);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: rgb(0, 255, 136);
+    border: none;
+    border-radius: 10px;
+}
+.nav{
+    list-style: none;
+    font-size: 30px;
+}
+
+li a{
+    font-family: myFont;
+    color: rgb(0, 255, 136);
+    font-weight: bolder;
+    display: block;
+    width: 150px;
+    padding: 5px;
+    margin: 10px;
+    border: solid black 5px;
+    border-radius: 30px;
+    background: rgb(0, 0, 0);
+}
+#ab,#hm,#edu,#skil,#cnt
+{
+   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.4s;
+}
+#ed{
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+#cn{
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 20px;
+
+}
+#am{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#sk{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.line{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 10px;
+    width: 700px;
+}
+.line1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    float: right;
+    background: white;
+    height: 10px;
+    width: 700px;
+    border: solid rgb(0, 255, 136) 2px;
+    border-right: none;
+    box-shadow: rgb(0, 255, 136) 0px 0px 10px 0px ;
+}
+.lineS{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: rgb(0, 255, 136);
+    height: 5px;
+    width: 700px;
+}
+.circle{
+    height: 30px;
+    width: 30px;
+    display: block;
+    background: rgb(0, 255, 136);
+    margin-left: 200px;
+    margin-top: 150px;
+    border-radius: 25px;
+    border: solid white 5px;
+    box-shadow: rgb(0, 255, 136) 0px 0px 20px 0px ;
+}
+
+div.circle p{
+    padding-left: 50px;
+    padding-bottom: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+.content{
+    margin-left: -1px;
+    margin-top: -22px;
+    width: 370px;
+    height: 125px;
+    padding-right: 10px ;
+    background: transparent;
+    border: solid rgb(0, 255, 136) 3px;
+    color:white;
+    border-radius: 12px;
+    box-shadow: rgb(0, 255, 136) 0px 0px 15px 0px ;
+}
+.about{
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    font-family: myFont;
+    font-weight: bolder;
+}
+.aboutme{
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+    text-align: center;
+}
+
+#progBar1{
+    height: 20px;
+    width: 400px;
+    margin-top: 5em;
+    background-color:rgb(0, 255, 136);
+    border-left: solid black 320px;
+    border-radius: 10px;
+}
+
+#progBar2{
+    height: 20px;
+    width: 400px;
+    margin-top: 7em;
+    background-color:rgb(0, 255, 136);
+    border-left: solid black 120px;
+    border-radius: 10px;
+
+}
+
+#progBar3{
+    height: 20px;
+    width: 400px;
+    margin-top: 7em;
+    background-color:rgb(0, 255, 136);
+    border-left: solid black 140px;
+    border-radius: 10px;
+}
+
+#progBar1::before{
+    content: '85%';
+    font-size: 20px;
+}
+
+#progBar2::before{
+    content: '30%';
+    font-size: 20px;
+}
+
+#progBar3::before{
+    content: '35%';
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px){
+   
+    .nav{
+        display: none;
+    }
+    .bod{
+        width: 100%;
+    }
+    .lineS{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: rgb(0, 255, 136);
+        height: 5px;
+        width: 100%;
+    }
+    .line{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 10px;
+        width: 340px;
+    }
+    .line1{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        float: right;
+        background: white;
+        height: 10px;
+        width: 340px;
+        border: solid rgb(0, 255, 136) 2px;
+        border-right: none;
+        box-shadow: rgb(0, 255, 136) 0px 0px 10px 0px ;
+    }
+    .circle{
+        height: 30px;
+        width: 30px;
+        display: block;
+        background: rgb(0, 255, 136);
+        margin-left: 5px;
+        margin-top: 150px;
+        border-radius: 25px;
+        border: solid white 5px;
+        box-shadow: rgb(0, 255, 136) 0px 0px 20px 0px ;
+    }
+    .content{
+        width:345px;
+        height: 125px;
+    }
+}
+#form{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
